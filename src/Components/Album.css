@@ -1,0 +1,47 @@
+.album {
+    background: black;
+    margin:auto;
+    padding: 2rem;
+    width:100%;
+}
+
+h2 {
+    color:white;
+    text-align: center;
+}
+
+.line{
+    background-color: white;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 940px) {
+    .gallery .container {
+        grid-template-columns: 1fr;
+
+    }
+
+    .gallery .container {
+        width: 100%;
+    }
+
+    .gallery .container img {
+        padding: 1rem;
+        width: 90vw;      
+    }
+
+    .gallery .container .col-2 {
+        padding: 0;
+    }
+
+    .gallery button {
+        margin-bottom: 1rem;
+    }
+
+
+}

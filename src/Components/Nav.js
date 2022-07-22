@@ -11,7 +11,7 @@ const Nav = () => {
     <div className="header">
       <nav className="navbar">
         <a href='/' className='logo'>
-          <img src={logo} alt='is that french'/>
+          <h2>IS THAT FRENCH</h2>
         </a>
         <div className="hamburger" onClick={handleClick}>
           {click ? (<FaTimes size={30} style={{color: 'black'}} />) : <FaBars size={30} style={{color: 'black'}} />}
