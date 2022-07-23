@@ -1,6 +1,9 @@
+
+import React from 'react';
 import About from './Components/About'
 import Hero from './Components/Hero'
-import Album from './Components/Album'
+import Gallery from './Components/Gallery'
+import Reservations from './Components/Reservations'
 import Nav from './Components/Nav'
 
 
@@ -10,13 +13,15 @@ import {
 
 export default function App() {
   return (
-    <Router>
+    <div>
+
       <Nav />
       <Hero />
       <About/>
-      <Album/>
-
-    </Router>
+      <Gallery/>
+      <Reservations/>
+ 
+    </div>
   );
 }
 

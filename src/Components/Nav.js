@@ -1,37 +1,40 @@
-import { Link } from "react-router-dom";
-import { useState } from 'react'
+// import { Link } from "react-router-dom";
+import React, { useState } from 'react'
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from 'react-scroll'
 import logo from "../Images/logo.png";
 import "./Nav.css";
 
 const Nav = () => {
   const [click, setClick] = useState(false)
   const handleClick = () => setClick(!click)
+  const closeMenu = () => setClick(false)
   return (
     <div className="header">
       <nav className="navbar">
-        <a href='/' className='logo'>
-          <h2>IS THAT FRENCH</h2>
-        </a>
+        <li className="logo">
+            <Link to="/">IS THAT FRENCH</Link>
+          </li>
         <div className="hamburger" onClick={handleClick}>
           {click ? (<FaTimes size={30} style={{color: 'black'}} />) : <FaBars size={30} style={{color: 'black'}} />}
        
         </div>
         <ul className={click ? "nav-menu active" : 'nav-menu'}>
           <li className="nav-item">
-            <Link to="/">Home</Link>
+            <Link to="hero" spy={true} smooth={true} offset={0} duration={500} onClick={closeMenu} >Home</Link>
           </li>
           <li className="nav-item">
-            <Link to="/about">About</Link>
+            <Link to="about" spy={true} smooth={true} offset={-95} duration={500} onClick={closeMenu}>About</Link>
           </li>
           <li className="nav-item">
-            <Link to="/gallery">Gallery</Link>
+            <Link to="gallery" spy={true} smooth={true} offset={-94} duration={500} onClick={closeMenu}>Gallery</Link>
+          </li>
+          
+          <li className="nav-item">
+            <Link to="reservations" spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>Reservations</Link>
           </li>
           <li className="nav-item">
-            <Link to="/reservations">Reservations</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/contact">Contact</Link>
+            <Link to="contact" spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>Contact</Link>
           </li>
         </ul>
       </nav>

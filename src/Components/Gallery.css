@@ -1,9 +1,14 @@
-.album {
-    background: black;
+.gallery {
+    background: rgb(78, 76, 76);
     margin:auto;
     padding: 2rem;
     width:100%;
+    height:90vh;
 }
+
+/* .gallery .album-container {
+    height:90vh;
+} */
 
 h2 {
     color:white;
@@ -13,12 +18,6 @@ h2 {
 .line{
     background-color: white;
 }
-
-
-
-
-
-
 
 @media screen and (max-width: 940px) {
     .gallery .container {

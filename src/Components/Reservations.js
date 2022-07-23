@@ -1,14 +1,14 @@
 import React from "react";
-import "./About.css";
+import "./Reservations.css";
 import bar from "../Images/bar.jpg";
 
-const About = () => {
+const Reservations = () => {
   return (
-    <div className="about" id="about">
+    <div className="reservations" id="reservations">
       <div className="container">
         <img src={bar} alt="bar" />
         <div className="col-2">
-          <h2>About</h2>
+          <h2>reservations</h2>
           <span className="line"></span>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -37,4 +37,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Reservations;

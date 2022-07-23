@@ -1,6 +1,6 @@
 .header{
     position:fixed;
-    height:90px;
+    height:10vh;
     width:100%;
     top:0;
     left:0;
@@ -13,10 +13,11 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1240px;
+    width:100vw;
     margin:auto;
     height: 100%;
     padding : 0 1rem;
+    background-color: rgb(19,19,19);
 }
 
 .header .nav-menu a {
@@ -29,6 +30,8 @@
 
 }
 
+
+
 .header .nav-menu {
     display:flex;
 }
@@ -36,6 +39,12 @@
 .header .nav-item{
     padding:1rem;
     font-weight: 500;
+}
+
+.nav-item .active {
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--secondary-color);
+
 }
 
 .header .nav-item a:hover{
