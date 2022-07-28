@@ -3,7 +3,7 @@ import React from 'react';
 import About from './Components/About'
 import Hero from './Components/Hero'
 import Gallery from './Components/Gallery'
-import Reservations from './Components/Reservations'
+import Contact from './Components/Contact'
 import Nav from './Components/Nav'
 
 
@@ -19,7 +19,7 @@ export default function App() {
       <Hero />
       <About/>
       <Gallery/>
-      <Reservations/>
+      <Contact/>
  
     </div>
   );

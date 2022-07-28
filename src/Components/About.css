@@ -6,11 +6,15 @@
 
 }
 
+img {
+    height:500px;
+}
+
 
 
 .about .container {
     height:90vh;
-    width:1240px;
+    /* width:1240px; */
     margin:auto;
     display:grid;
     grid-template-columns: repeat(2, 1fr);

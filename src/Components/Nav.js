@@ -1,6 +1,7 @@
 // import { Link } from "react-router-dom";
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from "react-icons/fa";
+import {AiFillFacebook} from 'react-icons'
 import { Link } from 'react-scroll'
 import logo from "../Images/logo.png";
 import "./Nav.css";
@@ -21,20 +22,16 @@ const Nav = () => {
         </div>
         <ul className={click ? "nav-menu active" : 'nav-menu'}>
           <li className="nav-item">
-            <Link to="hero" spy={true} smooth={true} offset={0} duration={500} onClick={closeMenu} >Home</Link>
+            <Link to="hero" spy={true} smooth={true} offset={-100}  duration={500} onClick={closeMenu} >Home</Link>
           </li>
           <li className="nav-item">
-            <Link to="about" spy={true} smooth={true} offset={-95} duration={500} onClick={closeMenu}>About</Link>
+            <Link to="about" spy={true} smooth={true}   offset={-100} duration={500} onClick={closeMenu}>About</Link>
           </li>
           <li className="nav-item">
-            <Link to="gallery" spy={true} smooth={true} offset={-94} duration={500} onClick={closeMenu}>Gallery</Link>
-          </li>
-          
-          <li className="nav-item">
-            <Link to="reservations" spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>Reservations</Link>
+            <Link to="gallery" spy={true} smooth={true}  offset={-108} duration={500} onClick={closeMenu}>Gallery</Link>
           </li>
           <li className="nav-item">
-            <Link to="contact" spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>Contact</Link>
+            <Link to="contact" spy={true} smooth={true}   offset={-108} duration={500} onClick={closeMenu}>Contact</Link>
           </li>
         </ul>
       </nav>

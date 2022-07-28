@@ -1,14 +1,18 @@
 .gallery {
-    background: rgb(78, 76, 76);
+    background: rgb(19, 19, 19);
     margin:auto;
-    padding: 2rem;
     width:100%;
-    height:90vh;
+
 }
 
-/* .gallery .album-container {
+.album-container {
     height:90vh;
-} */
+    padding: 2rem;
+    display:grid;
+    align-content:center;
+}
+
+
 
 h2 {
     color:white;

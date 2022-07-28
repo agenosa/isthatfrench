@@ -25,7 +25,8 @@ const Gallery = () => {
             <div className='album-container'>
             <h2>Gallery</h2>
             <span className='line'></span>
-        <PhotoAlbum layout="rows" photos={photos} spacing={6} targetRowHeight={300} onClick={openLightbox} />
+          <div className='photo-container'>
+          <PhotoAlbum layout="rows" photos={photos} spacing={6} targetRowHeight={275} onClick={openLightbox} />
         <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
@@ -40,6 +41,11 @@ const Gallery = () => {
           </Modal>
         ) : null}
       </ModalGateway>
+
+
+
+          </div>
+        
         </div>
         </div>
     )
