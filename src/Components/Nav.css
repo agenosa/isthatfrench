@@ -9,6 +9,12 @@
     overflow: hidden;
 }
 
+.logo{
+    text-decoration: none;
+    list-style: none;
+    color:white
+}
+
 .header .navbar {
     display:flex;
     justify-content: space-between;
@@ -22,6 +28,7 @@
 
 .header .nav-menu a {
     color: white;
+    cursor:pointer;
 }
 
 .header .navbar img {
@@ -72,7 +79,8 @@
     }
 
     .header .navbar {
-        max-width: 100%;
+        margin:0;
+        width:100vw;
 
     }
 
@@ -87,7 +95,7 @@
         top:90px;
         flex-direction: column;
         background-color: rgba(0,0,0,.9);
-        width: 100%;
+        width: 100vw;
         height:90vh;
         z-index: 999;
         text-align: center;

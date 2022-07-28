@@ -2,10 +2,13 @@ import React from 'react'
 import './Contact.css'
 import {FaFacebookSquare, FaInstagramSquare} from 'react-icons/fa'
 
+import opentable from '../Images/opentable.png'; 
+
 const Contact = () => {
     return(
         <div className='contact' id='contact'>
             <div className="container">
+                
       <div className="col-1">
         
         <ul>
@@ -34,14 +37,11 @@ const Contact = () => {
         </ul>
         </div>
         <div className="col-2">
-          <h2>Contact Us</h2>
+          <h2>Book a reservation</h2>
           <span className="line"></span>
-          
-          <button className="button"><FaFacebookSquare/></button>
-                    
-          <button className="button"><FaInstagramSquare/></button>
-                    
-          <button className="button">Reserve Now</button>
+          <a href="https://www.opentable.ca/r/is-that-french-vancouver" target="_blank">
+          <img src={opentable} alt='opentable'></img>
+          </a>
         </div>
       </div>
 

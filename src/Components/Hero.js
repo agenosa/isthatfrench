@@ -8,7 +8,7 @@ const Hero = () => {
                 <p>IS</p>
                 <p>THAT</p>
                 <p>FRENCH</p>
-                <button href='/' className='button'>Reserve Now
+                <button href='/' className='button'>About Us
                 </button>
             </div>
 

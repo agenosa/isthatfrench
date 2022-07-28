@@ -6,12 +6,11 @@
 }
 
 .album-container {
-    height:90vh;
+    height:100vh;
     padding: 2rem;
     display:grid;
     align-content:center;
 }
-
 
 
 h2 {

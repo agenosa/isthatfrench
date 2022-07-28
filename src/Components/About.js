@@ -10,7 +10,7 @@ const About = () => {
         <img src={bar} alt="bar" />
         </div>
         <div className="col-2">
-          <h2>About</h2>
+          <h2>Our Story</h2>
           <span className="line"></span>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting

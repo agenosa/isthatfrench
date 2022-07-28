@@ -5,6 +5,7 @@ import Hero from './Components/Hero'
 import Gallery from './Components/Gallery'
 import Contact from './Components/Contact'
 import Nav from './Components/Nav'
+import Footer from './Components/Footer'
 
 
 import {
@@ -20,6 +21,7 @@ export default function App() {
       <About/>
       <Gallery/>
       <Contact/>
+      <Footer/>
  
     </div>
   );

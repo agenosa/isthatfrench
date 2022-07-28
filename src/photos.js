@@ -16,6 +16,7 @@ const unsplashPhotos = [
 
 const photos = unsplashPhotos.map((photo) => ({
     src: unsplashLink(photo.id, photo.width, photo.height),
+
     width: photo.width,
     height: photo.height,
     images: breakpoints.map((breakpoint) => {
